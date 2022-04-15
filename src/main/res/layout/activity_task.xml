@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:style="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.treming.task.TaskActivity"
+        android:orientation="vertical">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTask"
+            android:hint="Tarea"
+            style="@android:style/Widget.Holo.Spinner"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none|textPersonName"
+            android:ems="10"
+            android:focusable="false"
+            android:layout_marginTop="12dp"
+            android:id="@+id/editTextDateInit" android:hint="Fecha de inicio"
+            style= "@android:style/Widget.Holo.Spinner"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none|textPersonName"
+            android:ems="10"
+            android:focusable="false"
+            android:id="@+id/editTextDateEnd" android:hint="Fecha de entrega"
+            style= "@android:style/Widget.Holo.Spinner"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/spinnerState"
+            style= "@android:style/Widget.Holo.Light.Spinner"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerPriority"
+            android:layout_marginTop="21dp"
+            style= "@android:style/Widget.Holo.Light.Spinner"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Guardar" />
+</LinearLayout>
